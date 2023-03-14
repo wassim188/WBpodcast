@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+  .home-media {
+    padding: 100px 50px;
+    overflow: hidden;
+    border-radius: 0px;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    border-radius: 25px;
+    margin: 10px 0;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .home-media {
+    border-radius: 16px;
+  }
+}
+
+

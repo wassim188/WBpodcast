@@ -31,4 +31,4 @@ const mongoose = require("mongoose");
  {timestamps: true}
  );
 
-module.exports = User = mongoose.model("users", userSchema); 
+module.exports = User = mongoose.model("User", userSchema); 

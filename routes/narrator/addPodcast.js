@@ -3,8 +3,8 @@ const cloudinary = require("../../middlewares/cloudinary");
 const fs = require("fs");
 module.exports = async (req, res) => {
   try {
-    const { id } = req.auth;
-    const { title, desc, date, duration, episodeNumber, audioURL } = req.body;
+    let { id } = req.auth;
+    let { title, desc, date, duration, episodeNumber, audioURL } = req.body;
     const uploader = async (path) => await cloudinary.uploads(path, "uploads");
     if (req.file) {
       const { path } = req.file;
@@ -35,7 +35,7 @@ module.exports = async (req, res) => {
         episodeNumber,
         audioURL,
         narrator: id,
-        podcastImage: "/uploads",
+        podcastImage: "/uploads/addPhoto.jpg",
       });
       const podcast = await newPodcast.save();
       return res.status(200).json({

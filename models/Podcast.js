@@ -1,4 +1,5 @@
 const mongoose = require("mongoose")
+//const Narrator = require("./Narrator")
 const podcastSchema = new mongoose.Schema(
   {
     title: {
@@ -36,4 +37,4 @@ const podcastSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-module.exports = Podcast = mongoose.model("podcast",podcastSchema)
+module.exports = Podcast = mongoose.model("Podcast",podcastSchema)

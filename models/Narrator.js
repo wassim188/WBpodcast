@@ -1,4 +1,3 @@
-const { boolean } = require("joi");
 const mongoose = require("mongoose");
 const narratorSchema = new mongoose.Schema(
   {
@@ -36,4 +35,4 @@ const narratorSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = Narrator = mongoose.model("narrator", narratorSchema);
+module.exports = Narrator = mongoose.model("Narrator", narratorSchema);

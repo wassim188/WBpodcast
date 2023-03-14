@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.loginView {
+  background-color: #fff;
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+.register-container {
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: rgba(255, 137, 59, 0.296);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(24, 24, 24, 0.1);
+  backdrop-filter: blur(5px);
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-login {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  transition: all 0.25s ease-in-out;
+}
+
+.button-login:hover {
+  background-color: #fdba74;
+  border: 1px solid rgba(233, 199, 154, 1);
+  color: #fff;
+}
+.Button-signUp {
+  margin-top: 3px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  transition: all 0.25s ease-in-out;
+}
+.Button-signUp:hover {
+  background-color: #fdba74;
+  border: 1px solid rgba(233, 199, 154, 1);
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-form {
+    padding: 100px 50px;
+    overflow: hidden;
+    border-radius: 0px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px 0;
+  }
+
+  input[type="password"] {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px 0;
+  }
+
+  label {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container-form {
+    padding: 100px 50px;
+    overflow: hidden;
+    border-radius: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container-form {
+    border-radius: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-form {
+    border-radius: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container-form {
+    padding: 200px;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+}

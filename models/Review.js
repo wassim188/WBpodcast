@@ -9,11 +9,11 @@ const reviewSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
-    Podcast: {
+    podcast: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Podcast",
     },
   },
   { timestamps: true }
 );
-module.exports = Review = mongoose.model("review", reviewSchema);
+module.exports = Review = mongoose.model("Review", reviewSchema);
